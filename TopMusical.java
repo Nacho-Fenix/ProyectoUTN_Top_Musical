@@ -49,7 +49,7 @@ public class TopMusical {
 			System.out.print("\n¿Deseas ingresar otro top? (s/n): ");
 			String opcion = scanner.next();
 			continuar = opcion.equalsIgnoreCase("s");// Lo usamos para ignorar la diferencia ente mayuscula y minuscula al ingresar (s/n)
-			if (opcion.charAt (0) == 's' || opcion.charAt (0) == 'n' )
+			if (opcion.charAt (0) == 's' ||opcion.charAt (0) == 'S' || opcion.charAt (0) == 'n'|| opcion.charAt (0) == 'N' )
 			{break;
 			}else {
 				System.out.print("Opccion no valida");
@@ -109,7 +109,7 @@ public class TopMusical {
 		 * @author Elizagoyen Juan Manuel
 		 * @author Nieto Matias
 		 * @author Genovesy Airton
-		 * @version 1.3
+		 * @version 1.5
 		 */
 	}
 }
