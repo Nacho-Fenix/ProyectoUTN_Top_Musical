@@ -42,12 +42,21 @@ public class TopMusical {
 			for (int i = 0; i < canciones.length; i++) {
 				System.out.println((i + 1) + "º" + canciones[i]);
 			}
+			
 
+			while (true){
 			// Aca le preguntamos al usuario si quiere ingresar otro top
 			System.out.print("\n¿Deseas ingresar otro top? (s/n): ");
 			String opcion = scanner.next();
 			continuar = opcion.equalsIgnoreCase("s");// Lo usamos para ignorar la diferencia ente mayuscula y minuscula al ingresar (s/n)
+			if (opcion.charAt (0) == 's' || opcion.charAt (0) == 'n' )
+			{break;
+			}else {
+				System.out.print("Opccion no valida");
+			}
 		}
+	}
+
 
 		scanner.close();
 
@@ -100,7 +109,7 @@ public class TopMusical {
 		 * @author Elizagoyen Juan Manuel
 		 * @author Nieto Matias
 		 * @author Genovesy Airton
-		 * @version 1.0
+		 * @version 1.3
 		 */
 	}
 }
